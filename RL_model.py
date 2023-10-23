@@ -151,7 +151,7 @@ def main():
 
     parser.add_argument('--data_name', type=str, default=YELP_STAR, choices=[ LAST_FM_STAR, YELP_STAR,MOVIE, BOOK],
                         help='One of { LAST_FM_STAR, YELP_STAR, BOOK,MOVIE}.')
-    parser.add_argument('--entropy_method', type=str, default='match', help='entropy_method is one of {entropy, weight entropy,match}')
+    parser.add_argument('--entropy_method', type=str, default='weight_entropy', help='entropy_method is one of {entropy, weight entropy,match}')
     # Although the performance of 'weighted entropy' is better, 'entropy' is an alternative method considering the time cost.
     parser.add_argument('--max_turn', type=int, default=15, help='max conversation turn')
     parser.add_argument('--attr_num', type=int, help='the number of attributes')
